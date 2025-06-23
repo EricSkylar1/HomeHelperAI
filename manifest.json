@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "HomeHelperAI",
+  "version": "0.1",
+  "description": "Smart Listing Summary for Housing Sites",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.zillow.com/*"],
+      "js": ["scripts/content.js"],
+      "css": ["styles/overlay.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  }
+}
