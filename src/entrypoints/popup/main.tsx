@@ -6,8 +6,12 @@ import Sidebar from '@@/components/Sidebar.tsx';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <div className='flex'>
-      <App/>
-      <Sidebar/>
+      <div>
+        <App/>
+      </div>
+      <div className='flex-1'>
+        <Sidebar/>
+      </div>
     </div>
   </React.StrictMode>,
 );
