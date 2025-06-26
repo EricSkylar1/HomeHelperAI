@@ -1,20 +1,38 @@
 function App() {
 
   return (
-    <div className='w-[400px] h-full flex-col text-center'>
-      <h1 className="text-3xl font-bold mb-4 p-4">Home Helper AI</h1>
-      <p className="text-l text-gray-700 mb-10 p-4">
-        Where finding your home becomes easier, with more relevant information tailored just for you.
-      </p>
+    <div className='w-[400px] h-full flex-col'>
+		<div className="bg-tech-blue text-white h-10">
+			<h1 className="text-2xl font-bold font-display mb-4 ml-2">Home Helper AI</h1>
+		</div>
+      
+      	<section className="text-gray-700 font-display text-center space-y-2 max-w-xl mx-auto bg-gray-50 p-2 rounded-xl overflow-hidden">
+			<div className="h-auto">
+				<div
+				className="rounded-3xl p-1 transition-transform duration-150 animate-bubble-in"
+				style={{ animationDelay: '0s', animationFillMode: 'forwards' }}
+				>
+				Personalized listings based on your preferences and location.
+				</div>
+			</div>
+			<div className="h-auto">
+				<div
+				className="rounded-3xl p-1 transition-transform duration-150 animate-bubble-in"
+				style={{ animationDelay: '0.15s', animationFillMode: 'forwards' }}
+				>
+				Smart filters cut through the noise.
+				</div>
+			</div>
+			<div className="h-auto">
+				<div
+				className="rounded-3xl p-1 transition-transform duration-150 animate-bubble-in"
+				style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
+				>
+				Works instantly on Zillow — no setup required.
+				</div>
+			</div>
+		</section>
 
-      <section className="text-gray-700">
-        <h2 className="text-2xl font-semibold mb-4">How it works</h2>
-        <p className="leading-relaxed p-4">
-          Home Helper AI analyzes your preferences and the local market to deliver personalized property
-          recommendations. Using advanced data insights, it filters out the noise and surfaces the homes that
-          truly match your needs.
-        </p>
-      </section>
     </div>
   );
 }
