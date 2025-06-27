@@ -1,3 +1,5 @@
+import ScrapedHomePhoto from "@@/components/ScrapedHomePhoto";
+
 function App() {
 
   return (
@@ -5,8 +7,8 @@ function App() {
 		<div className="bg-tech-blue text-white h-10">
 			<h1 className="text-2xl font-bold font-display mb-4 ml-2">Home Helper AI</h1>
 		</div>
-      
-      	<section className="text-gray-700 font-display text-center space-y-2 max-w-xl mx-auto bg-gray-50 p-2 rounded-xl overflow-hidden">
+		<ScrapedHomePhoto/>
+      	<section className="text-gray-700 font-display text-center space-y-2 max-w-xl mx-auto p-2 rounded-xl overflow-hidden">
 			<div className="h-auto">
 				<div
 				className="rounded-3xl p-1 transition-transform duration-150 animate-bubble-in"
