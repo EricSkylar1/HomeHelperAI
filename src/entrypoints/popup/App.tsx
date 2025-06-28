@@ -1,12 +1,11 @@
-import ScrapedHomePhoto from "@@/components/ScrapedHomePhoto";
+import Header from "@/components/Header";
+import ScrapedHomePhoto from "@/components/ScrapedHomePhoto";
 
 function App() {
 
   return (
     <div className='w-[400px] h-full flex-col'>
-		<div className="bg-tech-blue text-white h-10">
-			<h1 className="text-2xl font-bold font-display mb-4 ml-2">Home Helper AI</h1>
-		</div>
+		<Header/>
 		<ScrapedHomePhoto/>
       	<section className="text-gray-700 font-display text-center space-y-2 max-w-xl mx-auto p-2 rounded-xl overflow-hidden">
 			<div className="h-auto">

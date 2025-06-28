@@ -8,27 +8,38 @@ export default function RightSidebar() {
     <div className="h-screen flex flex-row w-full">
       {/* Main content */}
       <main
-        className="flex-grow"
+        className="flex-grow bg-gray-100"
         style={{ transition: "margin-right 0.3s ease" }}
       >
         {!isOpen && (
-          <button
-            onClick={() => setIsOpen(true)}
-            className="mb-4 p-2 bg-tech-blue text-white hover:bg-blue-700 transition-colors duration-300"
-            aria-label="Open sidebar"
-          >
-            {/* Hamburger icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+		<div>
+			<button
+				onClick={() => setIsOpen(true)}
+				className="mb-4 p-2  text-tech-blue hover:bg-tech-blue hover:text-white transition-colors duration-300"
+				aria-label="Open sidebar"
+			>
+		{/* Hamburger icon */}
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			className="h-6 w-6"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+			strokeWidth={2}
+		>
+			<path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+		</svg>
+		</button>
+		<nav className="flex-grow text-center">
+            <ul className="space-y-4 font-medium text-gray-700">
+              <li className="hover:text-tech-blue cursor-pointer">I</li>
+              <li className="hover:text-tech-blue cursor-pointer">I</li>
+              <li className="hover:text-tech-blue cursor-pointer">I</li>
+            </ul>
+          </nav>
+		</div>
+          
+		  
         )}
       </main>
 
